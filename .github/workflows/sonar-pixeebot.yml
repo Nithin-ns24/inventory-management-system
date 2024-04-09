@@ -1,6 +1,7 @@
 name: Fix Sonar Issues with Pixeebot
 on:
-  workflow_dispatch:
+  check_run:
+    types: [completed]
 
 permissions:
   id-token: write
